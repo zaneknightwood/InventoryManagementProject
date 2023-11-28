@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyPart">
+   <children>
+      <Button fx:id="modifyPartSaveButton" layoutX="336.0" layoutY="391.0" mnemonicParsing="false" onAction="#onSaveButton" text="Save" />
+      <Button fx:id="modifyPartCancelButton" layoutX="394.0" layoutY="391.0" mnemonicParsing="false" onAction="#onCancelButton" text="Cancel" />
+      <RadioButton fx:id="modifyPartInHouseRadial" layoutX="214.0" layoutY="67.0" mnemonicParsing="false" onAction="#onInHouseRadial" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="partLocation" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="modifyPartOutsourcedRadial" layoutX="325.0" layoutY="67.0" mnemonicParsing="false" onAction="#onOutsourcedRadial" text="Outsourced" toggleGroup="$partLocation" />
+      <Label layoutX="71.0" layoutY="63.0" text="Modify Part">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="306.0" text="Min" />
+      <Label fx:id="modifyPartMachineCompanyLabel" layoutX="111.0" layoutY="342.0" text="Machine ID" />
+      <Label layoutX="111.0" layoutY="161.0" text="ID" />
+      <Label layoutX="111.0" layoutY="198.0" text="Name" />
+      <Label layoutX="111.0" layoutY="234.0" text="Inv" />
+      <Label layoutX="111.0" layoutY="270.0" text="Price/Cost" />
+      <Label layoutX="111.0" layoutY="306.0" text="Max" />
+      <TextField fx:id="modifyPartIdText" editable="false" layoutX="200.0" layoutY="158.0" promptText="Auto Gen- Disabled">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="modifyPartNameText" layoutX="200.0" layoutY="194.0" />
+      <TextField fx:id="modifyPartInvText" layoutX="200.0" layoutY="230.0" />
+      <TextField fx:id="modifyPartPriceText" layoutX="200.0" layoutY="266.0" />
+      <TextField fx:id="modifyPartMaxText" layoutX="200.0" layoutY="302.0" />
+      <TextField fx:id="modifyPartMinText" layoutX="404.0" layoutY="302.0" />
+      <TextField fx:id="modifyPartMachineCompanyText" layoutX="200.0" layoutY="338.0" />
+   </children>
+</AnchorPane>
