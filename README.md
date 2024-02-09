@@ -1,5 +1,6 @@
 # Inventory Management Application
-The Inventory Management Application is a desktop application which allows a user to add, modify, and remove parts and products from inventory.
+The Inventory Management Application is a desktop application which allows a user to add, modify, and remove parts and products from inventory.<br/>
+&copy;2023 Zane Knightwood
 
 ## Author
 Zane Knightwood
